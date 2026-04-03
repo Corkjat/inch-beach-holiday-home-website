@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enquiry - Inch Beach Cottage</title>
+<link rel="stylesheet" href="css/style.css?v=1.0">
+</head>
+<body>
 
+<header>
+  <h1>Inch Beach Cottage</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="house.html">House</a>
+    <a href="activities.html">Activities</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="enquiry.html">Enquiry</a>
+  </nav>
+</header>
+
+<section class="enquiry">
+  <h2>Make an Enquiry</h2>
+  <form action="mailto:info@inchbeachcottage.ie" method="post" enctype="text/plain">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone:</label>
+    <input type="text" id="phone" name="phone">
+
+    <label for="checkin">Check-in Date:</label>
+    <input type="date" id="checkin" name="checkin">
+
+    <label for="checkout">Check-out Date:</label>
+    <input type="date" id="checkout" name="checkout">
+
+    <label for="guests">Number of Guests:</label>
+    <input type="number" id="guests" name="guests" min="1" max="10">
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4"></textarea>
+
+    <button type="submit">Send Enquiry</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2026 Inch Beach Cottage</p>
+</footer>
+
+</body>
+</html>
