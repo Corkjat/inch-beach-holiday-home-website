@@ -1,54 +1,49 @@
-/* Lightbox Styles */
-.lightbox {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  padding-top: 60px;
-  left: 0; top: 0;
-  width: 100%; height: 100%;
-  background-color: rgba(0,0,0,0.9);
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>House Description - Inch Beach Cottage</title>
+  <link rel="stylesheet" href="css/style.css?v=1.0">
+</head>
+<body>
 
-.lightbox-content {
-  margin: auto;
-  display: block;
-  max-width: 90%;
-  max-height: 80%;
-}
+  <header>
+    <h1>Inch Beach Cottage</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="house.html">House</a>
+      <a href="activities.html">Activities</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="enquiry.html">Enquiry</a>
+    </nav>
+  </header>
 
-.lightbox .close {
-  position: absolute;
-  top: 20px;
-  right: 35px;
-  color: #fff;
-  font-size: 40px;
-  font-weight: bold;
-  cursor: pointer;
-}
+  <main>
+    <section class="house-description">
+      <h2>About the House</h2>
+      <p>This charming cottage sleeps 6 guests with 3 bedrooms, 2 bathrooms, a modern kitchen, and a cozy living area.</p>
+      <ul>
+        <li>Wi-Fi & Smart TV</li>
+        <li>Fully equipped kitchen</li>
+        <li>Private parking</li>
+        <li>Steps from Inch Beach</li>
+      </ul>
 
-.lightbox-nav .prev,
-.lightbox-nav .next {
-  position: absolute;
-  top: 50%;
-  color: white;
-  font-size: 50px;
-  cursor: pointer;
-  user-select: none;
-  padding: 10px;
-}git add .
+      <div class="house-images">
+        <img src="images/bedroom1.jpg" alt="Bedroom 1">
+        <img src="images/bedroom2.jpg" alt="Bedroom 2">
+        <img src="images/kitchen.jpg" alt="Kitchen">
+        <img src="images/livingroom.jpg" alt="Living Room">
+        <img src="images/sittingroom.jpg" alt="Sitting Room">
+        <img src="images/garden.jpg" alt="Garden">
+      </div>
+    </section>
+  </main>
 
+  <footer>
+    <p>&copy; 2026 Inch Beach Cottage</p>
+  </footer>
 
-
-.lightbox-nav .prev { left: 0; }
-.lightbox-nav .next { right: 0; }
-
-.gallery-grid img {
-  width: 30%;
-  margin: 1%;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: transform 0.2s;
-}
-.gallery-grid img:hover {
-  transform: scale(1.05);
-}
+</body>
+</html>
