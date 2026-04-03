@@ -1,54 +1,153 @@
-/* Lightbox Styles */
-.lightbox {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  padding-top: 60px;
-  left: 0; top: 0;
-  width: 100%; height: 100%;
-  background-color: rgba(0,0,0,0.9);
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.lightbox-content {
-  margin: auto;
-  display: block;
-  max-width: 90%;
-  max-height: 80%;
+/* BODY */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  color: #333;
 }
 
-.lightbox .close {
-  position: absolute;
-  top: 20px;
-  right: 35px;
-  color: #fff;
-  font-size: 40px;
+/* HEADER */
+header {
+  background: #1e3a5f;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+/* NAVIGATION */
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
   font-weight: bold;
-  cursor: pointer;
 }
 
-.lightbox-nav .prev,
-.lightbox-nav .next {
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* HERO VIDEO */
+.hero {
+  position: relative;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* TEXT OVER VIDEO */
+.hero-text {
   position: absolute;
   top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
-  font-size: 50px;
-  cursor: pointer;
-  user-select: none;
-  padding: 10px;
-}git add .
-
-
-
-.lightbox-nav .prev { left: 0; }
-.lightbox-nav .next { right: 0; }
-
-.gallery-grid img {
-  width: 30%;
-  margin: 1%;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: transform 0.2s;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px 30px;
+  border-radius: 10px;
 }
-.gallery-grid img:hover {
-  transform: scale(1.05);
+
+.hero-text h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* MAIN CONTENT */
+main {
+  padding: 30px 20px;
+}
+
+/* MAP SECTION */
+.map-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.map-section h3 {
+  margin-bottom: 15px;
+}
+
+.map {
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  border: 0;
+  display: block;
+  margin: 0 auto;
+}
+
+/* TESTIMONIALS */
+.testimonials {
+  text-align: center;
+}
+
+.testimonials h3 {
+  margin-bottom: 20px;
+}
+
+.testimonials blockquote {
+  background: white;
+  padding: 15px;
+  margin: 10px auto;
+  max-width: 600px;
+  border-left: 5px solid #1e3a5f;
+  font-style: italic;
+}
+
+/* FOOTER */
+footer {
+  background: #1e3a5f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* IMAGES (for other pages like house/gallery) */
+.house-images img,
+.gallery img {
+  width: 100%;
+  max-width: 300px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+/* FLEX LAYOUT FOR IMAGE SECTIONS */
+.house-images,
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .hero-text h2 {
+    font-size: 1.5rem;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
 }
