@@ -3,16 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Inch Beach Cottage</title>
+<title>Inch Beach Cottage - Home</title>
 <link rel="stylesheet" href="css/style.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <header>
   <h1>Inch Beach Cottage</h1>
   <nav>
-    <a href="index.html">Home</a>
+    <a href="index.html" class="active">Home</a>
     <a href="house.html">House</a>
     <a href="activities.html">Activities</a>
     <a href="gallery.html">Gallery</a>
@@ -20,50 +19,53 @@
   </nav>
 </header>
 
-<section class="hero">
+<!-- Banner Video -->
+<section class="banner">
   <video class="hero-video" autoplay muted loop>
-    <source src="images/banner.mp4" type="video/mp4">
+    <source src="videos/banner.mp4" type="video/mp4">
   </video>
-  <div class="hero-text">
-    <h2>Relax at Inch Beach Cottage</h2>
-    <p>Luxury coastal retreat just steps from the sand</p>
-  </div>
 </section>
 
 <main>
+<section class="headline">
+  <h2>Your Coastal Retreat at Inch Beach</h2>
+  <p>Experience comfort and serenity just steps from the beach.</p>
+</section>
 
-<section class="info-section">
+<section class="features">
+  <div class="feature">
+    <h3>Beautiful Views</h3>
+    <p>Wake up to stunning scenery every morning.</p>
+  </div>
+  <div class="feature">
+    <h3>Cozy Interiors</h3>
+    <p>Modern kitchen, spacious bedrooms, and living area.</p>
+  </div>
+  <div class="feature">
+    <h3>Perfect Location</h3>
+    <p>Steps from Inch Beach and local attractions.</p>
+  </div>
+</section>
+
+<section class="map-reviews">
   <div class="reviews">
     <h3>What Guests Say</h3>
     <blockquote>"Absolutely stunning place with breathtaking views!"</blockquote>
     <blockquote>"Perfect family getaway, highly recommend!"</blockquote>
   </div>
-
-  <div class="map-section">
+  <div class="map">
     <h3>Location</h3>
-    <iframe class="map" src="https://www.google.com/maps/embed?pb=YOUR_MAP_EMBED_CODE" allowfullscreen="" loading="lazy"></iframe>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d19588.30721310519!2d-10.001609564289584!3d52.14271770571096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1775223970375!5m2!1sen!2sus" 
+      width="100%" 
+      height="400" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
   </div>
 </section>
-
-<section class="house-description">
-  <h2>About the House</h2>
-  <p>This charming cottage sleeps 6 guests with 3 bedrooms, 2 bathrooms, a modern kitchen, and a cozy living area.</p>
-  <ul>
-    <li>Wi-Fi & Smart TV</li>
-    <li>Fully equipped kitchen</li>
-    <li>Private parking</li>
-    <li>Steps from Inch Beach</li>
-  </ul>
-
-  <div class="house-images">
-    <img src="images/bedroom1.jpg" alt="Bedroom 1">
-    <img src="images/bedroom2.jpg" alt="Bedroom 2">
-    <img src="images/kitchen.jpg" alt="Kitchen">
-    <img src="images/livingroom.jpg" alt="Living Room">
-    <img src="images/garden.jpg" alt="Garden">
-  </div>
-</section>
-
 </main>
 
 <footer>
@@ -74,4 +76,3 @@
 <script src="js/script.js"></script>
 </body>
 </html>
-
